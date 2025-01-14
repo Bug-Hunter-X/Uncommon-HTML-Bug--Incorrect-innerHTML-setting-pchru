@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+  <script>
+    // Incorrect attempt to modify element content
+    document.getElementById("myDiv").textContent = "<p>This text is in a paragraph.</p>";
+  </script>
+</body>
+</html>
